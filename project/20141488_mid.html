@@ -1,0 +1,50 @@
+<!doctype html>  <!-- 20141488_mid.html -->
+<html lang="ko">
+ <head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <script>
+  function eventonclick() { document.getElementById("id_1").innerHTML="aaaa"; }
+  </script>
+  <title>박준호 기술이력서</title>
+ </head>
+
+ <style>
+  .header { height:30px; border:none; margin:20px 20px 0px 20px;text-align:center;}
+  .nav { display:inline; float:left; width:30%; height:300px; border:1px solid black; margin:20px 20px 20px 20px;text-align:center;}
+  .contents { float:left; width:61.5%; height:300px; border:1px solid black; margin:20px 20px 20px 0px; padding-left: 30px; text-align:left;}
+  .footer { clear:both; height:50px; border:1px solid black; margin:0px 20px 20px 20px; text-align:center;}
+ </style>
+
+ <body>
+  <div class="header">
+   <span>
+    <h3>기술 이력서</h3> 
+   </span>
+  </div>
+  <div class="nav">
+   <span>
+    <img src="../projectDB/junho.jpg" style="max-width: auto; height: auto;>
+    <p>20141488 박준호</p>
+    <p>대전대학교</p>
+    <p>컴퓨터 공학과 재학</p>
+   </span>
+  </div>
+
+  <div class="contents"> 
+   <span> <br/>
+    <li>수강과목</li> <br/>
+    <li>프로젝트 및 캡스톤 수행내역</li> <br/>
+    <li>자격증</li> <br/>
+    <li onclick="eventonclick()">교내 경진대회</li>
+   </span>
+  </div>
+
+  <div class="footer"> 
+   <span>
+    <p id="id_1"> 메세지표시 </p>
+   </span>
+  </div>
+ </body>
+</html>
