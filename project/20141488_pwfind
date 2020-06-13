@@ -1,0 +1,19 @@
+<!doctype html>  <!-- 20141488_pwfind.html -->
+<html lang="ko">
+ <head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>폼 학습</title>
+ </head>
+ <body>
+  <section>
+   <form action="http://jsptogo.herokuapp.com/jspsrc/formFieldset1.jsp" method="post"> 
+    <fieldset>
+     <legend>ID/PW</legend>
+      <label for="namex">ID : admin</label><br/>
+      <label for="passx">PW : admin1</label>
+    </fieldset>
+   </form>
+  </section>
+ </body>
+</html>
