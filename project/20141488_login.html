@@ -2,29 +2,39 @@
 <html>
  <head>
   <meta charset="utf-8"/>
-  <meta name="content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+  <meta name="content="width=device-width, initial-scale=1.0"/>
   <style>
-  *{box-sizing:border-box;padding:0;margin:0}
-  .box1{width:20.0em;height:5.0em;background-color:beige;border:solid 2px lightgray; border-radius:1em;box-shadow:9px 6px 6px gray;text-align:left;}
-  .bs1{border-style:solid;}.bs2{border-style:dashed;}.bs3{border-style:dotted;}.bs4{border-style:double;}
-  .bs5{border-style:groove;}.bs6{border-style:ridge;}.bs7{border-style:inset;}.bs8{border-style:outset;}
-  .margin1{margin:20px 30px 40px 20px;}
-  .lbsize1{display:inline-block;width:5.0em;height:1.2em;text-align:right;padding:0.5em;}
-  .ipsize1{width:10em;height:1.8em;}
-  .btsize1{position:relative;top:-55px;left:240px;width:5.0em;height:4.0em;}
+  *{padding:0; margin:0;}
+  #section0 {width:250px; height:120px; margin:10px; padding:10px; border:solid 1px lightgray; border-radius:1em; }
+  ul.level_1 > li{list-style:none; display:inline-block; vertical-align:bottom;}
+  ul.level_1 > li > ul {list-style:none;}
+  .level_2 span {display:inline-block; width:70px;}
+  .level_2 input {width:100px;}
+  #loginBtn button {margin-left:5px; height:42px;}
+  #join_find {list-style:none; text-decoration:none; margin-top:10px;}
+  #join_find li {display:inline; margin:5px;}
+  a:link {color:blue; text-decoration:none;} a:visited {color:purple; text-decoration:none;}
+  a:hover {text-decoration:underline;} a:active {color:red; text-decoration:none;}
   </style>
   <title>박준호_ePortfolio</title>
   </head>
   <body>
-   <section>
-   <h3>[ePortfolio]</h3>
-   <form class="box1 bs5 margin1"action="http://hive.dju.ac.kr/~drkdhong/html5/formText1.jsp"method="post">
-    <label class="lbsize1" for="namex">아이디</label>
-    <input class="ipsize1" id="namex" type="text" name="namex" size="20"maxlength="20" placeholder="아이디입력"/><br/>
-    <label class="lbsize1" for="passx"> 패스워드</label>
-    <input class="ipsize1" id="passx" type="password" name="passx"/><br/>
-    <input class="btsize1" type="submit" value="로그인"/>
+   <section id="section0"><center><h3>로그인</h3></center>
+   <form action="http://hive.dju.ac.kr/~drkdhong/html5/login.jsp" method="post">
+   <ul class="level_1">
+   <li>
+    <ul class="level_2">
+      <center>
+      <li><span>아이디</span><input type="text" name="text"></li>
+      <li><span>비밀번호</span><input type="password" name="password"></li>
+      </center>
+    </ul>
+   <li id="loginBtn"><button>로그인</button></li>
+   </li>
+   </ul>
+   <ul id="join_find">
+   <li><center><a href="#">비밀번호찾기</a></center></li></ul>
    </form>
-   </section>
-  </body>
- </html>
+  </section>
+ </body>
+</html>
